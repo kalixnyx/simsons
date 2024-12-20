@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Movie Streaming Hub</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#live-streams">Live Streams</a></li>
+                <li><a href="#account">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Movie Streaming Hub</h1>
+        <p>Stream, download, and enjoy a wide variety of movies and series.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies, series...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-list">
+            <a href="action.html" class="category">Action</a>
+            <a href="romance.html" class="category">Romance</a>
+            <a href="comedy.html" class="category">Comedy</a>
+            <a href="old-classics.html" class="category">Old Classics</a>
+            <a href="sci-fi.html" class="category">Sci-Fi</a>
+        </div>
+    </section>
+
+    <!-- Live Streams Section -->
+    <section id="live-streams" class="live-streams">
+        <h2>Join Live Cinema Streams</h2>
+        <p>Experience cinema from the comfort of your home.</p>
+        <button>Join Now</button>
+    </section>
+
+    <!-- My Account Section -->
+    <section id="account" class="account">
+        <h2>Manage Your Account</h2>
+        <p>Log in to customize your settings and manage your watchlist.</p>
+        <button>Sign In</button>
+        <button>Sign Up</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Movie Streaming Hub. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-left: 1em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-right: 1em;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 2em 1em;
+        }
+        .search-bar {
+            margin-top: 1em;
+        }
+        .search-bar input {
+            padding: 0.5em;
+            width: 300px;
+        }
+        .search-bar button {
+            padding: 0.5em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .categories {
+            padding: 2em;
+            background-color: #fff;
+            text-align: center;
+        }
+        .category-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .category {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .category:hover {
+            background-color: #555;
+        }
+        .live-streams {
+            padding: 2em;
+            background-color: #444;
+            text-align: center;
+        }
+        .account {
+            padding: 2em;
+            background-color: #fff;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+
+    <script>
+        document.querySelector('.search-bar button').addEventListener('click', () => {
+            const query = document.querySelector('.search-bar input').value;
+            alert(`Searching for: ${query}`);
+        });
+    </script>
+</body>
+</html>
